@@ -1,0 +1,12 @@
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System;
+global using System.Collections;
+global using SunamoExceptions.OnlyInSE;
+global using SunamoEnums.Enums;
+global using System.Diagnostics;
+global using SunamoThisApp;
+global using SunamoValues.Constants;
+global using SunamoStopwatch._sunamo;
+global using SunamoStringGetLines;
