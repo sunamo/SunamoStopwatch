@@ -1,5 +1,3 @@
-using SunamoStringSplit;
-
 namespace SunamoStopwatch;
 
 public static class StopwatchStatic
