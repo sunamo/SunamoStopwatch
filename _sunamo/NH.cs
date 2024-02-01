@@ -1,6 +1,8 @@
+namespace SunamoStopwatch._sunamo;
+
 //namespace SunamoStopwatch._sunamo;
 
-//public class NH
+//internal class NH
 //{
 //    /// <summary>
 //    /// Must be object to use in EqualityComparer
@@ -25,7 +27,7 @@
 //        return null;
 //    }
 
-//    public static T Sum<T>(List<T> list)
+//    internal static T Sum<T>(List<T> list)
 //    {
 //        dynamic sum = 0;
 //        foreach (var item in list)
@@ -35,12 +37,12 @@
 //        return sum;
 //    }
 
-//    public static T Average<T>(List<T> list)
+//    internal static T Average<T>(List<T> list)
 //    {
 //        return Average<T>(Sum<T>(list), list.Count);
 //    }
 
-//    public static T Average<T>(dynamic gridWidth, dynamic columnsCount)
+//    internal static T Average<T>(dynamic gridWidth, dynamic columnsCount)
 //    {
 //        if (EqualityComparer<T>.Default.Equals(columnsCount, (T)NH.ReturnZero<T>()))
 //        {
