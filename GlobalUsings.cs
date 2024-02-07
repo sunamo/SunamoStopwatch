@@ -4,8 +4,4 @@ global using System.Linq;
 global using System.Text;
 global using System.Collections;
 global using System.Diagnostics;
-global using SunamoStringGetLines;
-global using SunamoStringSplit;
-global using SunamoThisApp;
-global using SunamoNumbers;
 global using SunamoStopwatch._sunamo;

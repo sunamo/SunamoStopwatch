@@ -50,7 +50,8 @@ public class StopwatchHelper
         var l = sw.ElapsedMilliseconds;
         sw.Reset();
         lastMessage = string.Format(operation + takes + l + "ms" + p, parametry);
-        ThisApp.Info( lastMessage);
+        //ThisApp.Info( lastMessage);
+        Console.WriteLine(lastMessage);
 #if DEBUG
         //DebugLogger.Instance.WriteLine(lastMessage);
 #endif

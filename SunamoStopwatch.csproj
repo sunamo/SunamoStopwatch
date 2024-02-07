@@ -3,17 +3,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>24.2.1.3</Version>
+    <Version>24.2.6.2</Version>
     <Description>Measuring time between operations</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="SunamoColors" Version="24.2.1.1" />
-    <PackageReference Include="SunamoFileExtensions" Version="24.2.1.1" />
-    <PackageReference Include="SunamoNumbers" Version="24.2.1.2" />
-    <PackageReference Include="SunamoStringGetLines" Version="24.2.1.1" />
-    <PackageReference Include="SunamoStringSplit" Version="24.2.1.1" />
-    <PackageReference Include="SunamoThisApp" Version="24.2.1.1" />
-    <PackageReference Include="SunamoTwoWayDictionary" Version="24.2.1.1" />
+    <PackageReference Include="SunamoTwoWayDictionary" Version="24.2.6.2" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>

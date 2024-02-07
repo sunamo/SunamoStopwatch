@@ -76,7 +76,7 @@ public static class StopwatchStatic
         sbElapsed.AppendLine(m);
     }
 
-    public static string CalculateAverageOfTakes(string li)
+    public static string CalculateAverageOfTakes(string li, Func<List<int>, string> nhAverage)
     {
         var l = SHGetLines.GetLines(li);
 
@@ -96,7 +96,7 @@ public static class StopwatchStatic
         StringBuilder sb = new StringBuilder();
         foreach (var item in d)
         {
-            sb.AppendLine(item.Key + " " + NH.Average<int>(item.Value) + "ms");
+            sb.AppendLine(item.Key + " " + nhAverage(item.Value) + "ms");
         }
 
         return sb.ToString();
