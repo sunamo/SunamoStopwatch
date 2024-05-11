@@ -5,3 +5,7 @@ global using System.Text;
 global using System.Collections;
 global using System.Diagnostics;
 global using SunamoStopwatch._sunamo;
+global using System.Collections.Generic;
+global using System.Collections;
+global using System.IO;
+
