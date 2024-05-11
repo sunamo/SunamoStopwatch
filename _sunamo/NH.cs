@@ -1,4 +1,4 @@
-namespace SunamoStopwatch._sunamo;
+namespace SunamoStopwatch;
 
 //namespace SunamoStopwatch._sunamo;
 

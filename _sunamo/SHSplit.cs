@@ -1,4 +1,4 @@
-﻿namespace SunamoStopwatch._sunamo;
+namespace SunamoStopwatch;
 internal class SHSplit
 {
     internal static List<string> Split(string item, params string[] space)
