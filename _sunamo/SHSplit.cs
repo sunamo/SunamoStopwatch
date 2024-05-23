@@ -1,7 +1,7 @@
 namespace SunamoStopwatch;
-internal class SHSplit
+public class SHSplit
 {
-    internal static List<string> Split(string item, params string[] space)
+    public static List<string> Split(string item, params string[] space)
     {
         return item.Split(space, StringSplitOptions.RemoveEmptyEntries).ToList();
     }
