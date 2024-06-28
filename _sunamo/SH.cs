@@ -1,7 +1,7 @@
 namespace SunamoStopwatch;
 
-public class SH
+internal class SH
 {
-    public static Func<string, List<string>> GetLines;
-    //public static Func<string, string, List<string>> Split;
+    internal static Func<string, List<string>> GetLines;
+    //internal static Func<string, string, List<string>> Split;
 }

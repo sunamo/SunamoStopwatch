@@ -1,6 +1,6 @@
 namespace SunamoStopwatch;
 
-public class DictionaryHelper
+internal class DictionaryHelper
 {
     #region AddOrCreate
     /// <summary>
@@ -15,7 +15,7 @@ public class DictionaryHelper
     /// <param name="sl"></param>
     /// <param name="key"></param>
     /// <param name="value"></param>
-    public static void AddOrCreate<Key, Value, ColType>(IDictionary<Key, List<Value>> dict, Key key, Value value,
+    internal static void AddOrCreate<Key, Value, ColType>(IDictionary<Key, List<Value>> dict, Key key, Value value,
         bool withoutDuplicitiesInValue = false, Dictionary<Key, List<string>> dictS = null)
     {
         var compWithString = false;
@@ -120,7 +120,7 @@ public class DictionaryHelper
         }
     }
 
-    public static void AddOrCreate<Key, Value>(IDictionary<Key, List<Value>> sl, Key key, Value value,
+    internal static void AddOrCreate<Key, Value>(IDictionary<Key, List<Value>> sl, Key key, Value value,
         bool withoutDuplicitiesInValue = false, Dictionary<Key, List<string>> dictS = null)
     {
         AddOrCreate<Key, Value, object>(sl, key, value, withoutDuplicitiesInValue, dictS);
