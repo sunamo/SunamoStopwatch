@@ -1,3 +1,5 @@
+
+namespace SunamoStopwatch;
 public class TranslateAble
 {
     

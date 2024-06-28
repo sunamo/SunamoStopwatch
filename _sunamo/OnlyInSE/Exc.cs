@@ -1,3 +1,5 @@
+
+namespace SunamoStopwatch;
 using System.Diagnostics;
 using System.Text;
 
