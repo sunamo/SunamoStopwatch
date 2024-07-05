@@ -4,10 +4,17 @@ global using System.Linq;
 global using System.Text;
 global using System.Collections;
 global using System.Diagnostics;
-
 global using System.Collections.Generic;
 global using System.Collections;
 global using System.IO;
-
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
+global using SunamoStopwatch;
+global using SunamoStopwatch._sunamo.SunamoDictionary;
+global using SunamoStopwatch._sunamo.SunamoString;
+global using SunamoStopwatch._sunamo.SunamoStringGetLines;
+global using SunamoStopwatch._sunamo.SunamoStringSplit;
+global using SunamoStopwatch._sunamo.SunamoValues;
+global using SunamoStopwatch._sunamo.SunamoXlfKeys;
+global using SunamoStopwatch._sunamo.SunamoExceptions.OnlyInSE;
+global using SunamoStopwatch._sunamo.SunamoExceptions._AddedToAllCsproj;

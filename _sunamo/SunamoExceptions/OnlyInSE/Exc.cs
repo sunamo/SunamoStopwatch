@@ -1,5 +1,5 @@
 
-namespace SunamoStopwatch;
+namespace SunamoStopwatch._sunamo.SunamoExceptions.OnlyInSE;
 using System.Diagnostics;
 using System.Text;
 

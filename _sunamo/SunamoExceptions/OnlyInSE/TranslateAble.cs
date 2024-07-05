@@ -1,5 +1,5 @@
 
-namespace SunamoStopwatch;
+namespace SunamoStopwatch._sunamo.SunamoExceptions.OnlyInSE;
 internal class TranslateAble
 {
     

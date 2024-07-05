@@ -1,4 +1,4 @@
-namespace SunamoStopwatch;
+namespace SunamoStopwatch._sunamo.SunamoDictionary;
 
 internal class DictionaryHelper
 {
