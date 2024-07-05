@@ -18,3 +18,5 @@ global using SunamoStopwatch._sunamo.SunamoValues;
 global using SunamoStopwatch._sunamo.SunamoXlfKeys;
 global using SunamoStopwatch._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoStopwatch._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using System.Net;
+global using System.Threading.Tasks;

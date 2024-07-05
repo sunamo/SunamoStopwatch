@@ -1,4 +1,3 @@
-
 namespace SunamoStopwatch._sunamo.SunamoValues;
 internal class AllStrings
 {
