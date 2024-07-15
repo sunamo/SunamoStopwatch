@@ -86,7 +86,7 @@ public static class StopwatchStatic
         {
             if (item.Contains(takes))
             {
-                var d2 = SHSplit.Split(item, takes);
+                var d2 = SHSplit.SplitMore(item, takes);
                 var tp = d2[1].Replace("ms", string.Empty);
 
                 DictionaryHelper.AddOrCreate<string, int>(d, d2[0], int.Parse(tp));
