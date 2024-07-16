@@ -1,4 +1,4 @@
-//namespace SunamoStopwatch._sunamo.SunamoString;
+namespace SunamoStopwatch._sunamo.SunamoString;
 
 internal class SH
 {

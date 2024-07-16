@@ -13,3 +13,4 @@ global using SunamoStopwatch._sunamo.SunamoStringSplit;
 global using SunamoStopwatch._sunamo.SunamoValues;
 global using SunamoStopwatch._sunamo.SunamoExceptions.OnlyInSE;
 global using System.Net;
+global using SunamoStopwatch._sunamo.SunamoString;
