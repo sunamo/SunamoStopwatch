@@ -2,22 +2,26 @@ namespace SunamoStopwatch;
 
 public class StopwatchHelper
 {
-    public Stopwatch sw = new Stopwatch();
     public const string takes = " takes ";
 
 
-    public string lastMessage = null;
-    public StringBuilder sbElapsed = new StringBuilder();
+    public string lastMessage;
+    public StringBuilder sbElapsed = new();
+    public Stopwatch sw = new();
 
-    public long ElapsedMS
+    public long ElapsedMS => sw.ElapsedMilliseconds;
+
+
+    public void SaveElapsed(string v)
     {
-        get
-        {
-            return sw.ElapsedMilliseconds;
-        }
+        var l = sw.ElapsedMilliseconds;
+        sw.Reset();
+        var m = v + takes + l + "ms";
+        sbElapsed.AppendLine(m);
     }
 
     #region Reset,Start,Stop
+
     public void Reset()
     {
         sw.Reset();
@@ -35,11 +39,13 @@ public class StopwatchHelper
         sw.Reset();
         return r;
     }
+
     #endregion
 
     #region StopAnd*
+
     /// <summary>
-    /// Write ElapsedMilliseconds to debug, TSL. For more return long
+    ///     Write ElapsedMilliseconds to debug, TSL. For more return long
     /// </summary>
     /// <param name="operation"></param>
     /// <param name="p"></param>
@@ -59,7 +65,7 @@ public class StopwatchHelper
     }
 
     /// <summary>
-    /// Write ElapsedMilliseconds
+    ///     Write ElapsedMilliseconds
     /// </summary>
     /// <param name="operation"></param>
     /// <returns></returns>
@@ -67,15 +73,6 @@ public class StopwatchHelper
     {
         return StopAndPrintElapsed(operation, string.Empty);
     }
+
     #endregion
-
-
-
-    public void SaveElapsed(string v)
-    {
-        var l = sw.ElapsedMilliseconds;
-        sw.Reset();
-        var m = v + takes + l + "ms";
-        sbElapsed.AppendLine(m);
-    }
 }
