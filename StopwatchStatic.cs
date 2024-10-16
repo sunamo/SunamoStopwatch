@@ -28,10 +28,8 @@ public static class StopwatchStatic
         sbElapsed.AppendLine(m);
     }
 
-    public static string CalculateAverageOfTakes(string li, Func<List<int>, string> nhAverage)
+    public static string CalculateAverageOfTakes(List<string> l, Func<List<int>, string> nhAverage)
     {
-        var l = SHGetLines.GetLines(li);
-
         var d = new Dictionary<string, List<int>>();
 
         foreach (var item in l)
