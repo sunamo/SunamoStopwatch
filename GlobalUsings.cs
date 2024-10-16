@@ -10,3 +10,4 @@ global using SunamoStopwatch._sunamo.SunamoStringSplit;
 global using SunamoStopwatch._sunamo.SunamoExceptions;
 global using System.Reflection;
 global using System.Net;
+global using System.Diagnostics.CodeAnalysis;
