@@ -8,7 +8,7 @@ global using System.IO;
 global using SunamoStopwatch._sunamo.SunamoDictionary;
 global using SunamoStopwatch._sunamo.SunamoStringGetLines;
 global using SunamoStopwatch._sunamo.SunamoStringSplit;
-global using SunamoStopwatch._sunamo.SunamoValues;
+global using SunamoStopwatch;
 global using SunamoStopwatch._sunamo.SunamoExceptions;
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
