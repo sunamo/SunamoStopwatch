@@ -11,3 +11,6 @@ global using SunamoStopwatch._sunamo.SunamoExceptions;
 global using System.Reflection;
 global using System.Net;
 global using System.Diagnostics.CodeAnalysis;
+global using SunamoStopwatch;
+global using SunamoStopwatch._sunamo;
+global using SunamoStopwatch._sunamo.SunamoString;
