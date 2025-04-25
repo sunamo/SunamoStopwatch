@@ -35,7 +35,7 @@ public static class StopwatchStatic
         foreach (var item in l)
             if (item.Contains(takes))
             {
-                var d2 = SHSplit.SplitMore(item, takes);
+                var d2 = SHSplit.Split(item, takes);
                 var tp = d2[1].Replace("ms", string.Empty);
 
                 DictionaryHelper.AddOrCreate(d, d2[0], int.Parse(tp));
