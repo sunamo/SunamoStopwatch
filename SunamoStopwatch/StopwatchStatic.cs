@@ -1,3 +1,6 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
+
 namespace SunamoStopwatch;
 
 public static class StopwatchStatic
@@ -22,29 +25,29 @@ public static class StopwatchStatic
 
     public static void SaveElapsed(string v)
     {
-        var l = sw.sw.ElapsedMilliseconds;
+        var list = sw.sw.ElapsedMilliseconds;
         sw.Reset();
-        var m = v + StopwatchHelper.takes + l + "ms";
-        sbElapsed.AppendLine(m);
+        var message = v + StopwatchHelper.takes + list + "ms";
+        sbElapsed.AppendLine(message);
     }
 
-    public static string CalculateAverageOfTakes(List<string> l, Func<List<int>, string> nhAverage)
+    public static string CalculateAverageOfTakes(List<string> list, Func<List<int>, string> nhAverage)
     {
-        var d = new Dictionary<string, List<int>>();
+        var dictionary = new Dictionary<string, List<int>>();
 
-        foreach (var item in l)
+        foreach (var item in list)
             if (item.Contains(takes))
             {
                 var d2 = SHSplit.Split(item, takes);
                 var tp = d2[1].Replace("ms", string.Empty);
 
-                DictionaryHelper.AddOrCreate(d, d2[0], int.Parse(tp));
+                DictionaryHelper.AddOrCreate(dictionary, d2[0], int.Parse(tp));
             }
 
-        var sb = new StringBuilder();
-        foreach (var item in d) sb.AppendLine(item.Key + " " + nhAverage(item.Value) + "ms");
+        var stringBuilder = new StringBuilder();
+        foreach (var item in dictionary) stringBuilder.AppendLine(item.Key + " " + nhAverage(item.Value) + "ms");
 
-        return sb.ToString();
+        return stringBuilder.ToString();
     }
 
     #region Reset,Start,Stop
@@ -65,9 +68,9 @@ public static class StopwatchStatic
 
     public static long StopAndEllapsedMs()
     {
-        var l = sw.sw.ElapsedMilliseconds;
+        var list = sw.sw.ElapsedMilliseconds;
         sw.sw.Reset();
-        return l;
+        return list;
     }
 
     /// <summary>

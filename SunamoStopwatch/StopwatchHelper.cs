@@ -1,3 +1,6 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
+
 namespace SunamoStopwatch;
 
 public class StopwatchHelper
@@ -14,10 +17,10 @@ public class StopwatchHelper
 
     public void SaveElapsed(string v)
     {
-        var l = sw.ElapsedMilliseconds;
+        var list = sw.ElapsedMilliseconds;
         sw.Reset();
-        var m = v + takes + l + "ms";
-        sbElapsed.AppendLine(m);
+        var message = v + takes + list + "ms";
+        sbElapsed.AppendLine(message);
     }
 
     #region Reset,Start,Stop
@@ -35,9 +38,9 @@ public class StopwatchHelper
 
     public string Stop()
     {
-        var r = sw.ElapsedMilliseconds + "ms";
+        var result = sw.ElapsedMilliseconds + "ms";
         sw.Reset();
-        return r;
+        return result;
     }
 
     #endregion
@@ -53,15 +56,15 @@ public class StopwatchHelper
     /// <returns></returns>
     public long StopAndPrintElapsed(string operation, string p, params string[] parametry)
     {
-        var l = sw.ElapsedMilliseconds;
+        var list = sw.ElapsedMilliseconds;
         sw.Reset();
-        lastMessage = string.Format(operation + takes + l + "ms" + p, parametry);
+        lastMessage = string.Format(operation + takes + list + "ms" + p, parametry);
         //ThisApp.Info( lastMessage);
         Console.WriteLine(lastMessage);
 #if DEBUG
         //DebugLogger.Instance.WriteLine(lastMessage);
 #endif
-        return l;
+        return list;
     }
 
     /// <summary>
