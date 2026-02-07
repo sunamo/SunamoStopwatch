@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoStopwatch.Tests\\SunamoStopwatch.Tests.csproj" />
+  <Project Path="RunnerStopwatch\\RunnerStopwatch.csproj" />
+  <Project Path="SunamoStopwatch\SunamoStopwatch.csproj" />
+</Solution>
