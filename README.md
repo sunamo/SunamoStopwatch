@@ -1,28 +1,28 @@
 # SunamoStopwatch
 
-Measuring time between operations
+Measuring time between operations.
 
 ## Overview
 
-SunamoStopwatch is part of the Sunamo package ecosystem, providing modular, platform-independent utilities for .NET development.
+SunamoStopwatch is part of the Sunamo package ecosystem, providing modular, platform-independent utilities for .NET development. It offers both instance-based (`StopwatchHelper`) and static (`StopwatchStatic`) APIs for measuring elapsed time of operations.
 
 ## Main Components
 
 ### Key Classes
 
-- **StopwatchHelper**
-- **StopwatchStatic**
+- **StopwatchHelper** - Instance-based stopwatch for measuring elapsed time with support for saving and printing results.
+- **StopwatchStatic** - Static wrapper providing global stopwatch functionality without needing to manage instances.
 
 ### Key Methods
 
-- `SaveElapsed()`
-- `Reset()`
-- `Start()`
-- `Stop()`
-- `StopAndPrintElapsed()`
-- `PrintElapsedAndContinue()`
-- `CalculateAverageOfTakes()`
-- `StopAndEllapsedMs()`
+- `SaveElapsed()` - Saves the elapsed time for a named operation.
+- `Reset()` - Resets the stopwatch to zero.
+- `Start()` - Resets and starts the stopwatch.
+- `Stop()` - Stops the stopwatch and returns the elapsed time as a formatted string.
+- `StopAndPrintElapsed()` - Stops, prints, and returns the elapsed milliseconds.
+- `PrintElapsedAndContinue()` - Prints elapsed time and restarts the stopwatch.
+- `CalculateAverageOfTakes()` - Calculates average elapsed time from a list of timing records.
+- `StopAndElapsedMilliseconds()` - Stops the stopwatch and returns the elapsed milliseconds.
 
 ## Installation
 
@@ -32,15 +32,15 @@ dotnet add package SunamoStopwatch
 
 ## Dependencies
 
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
+- **Microsoft.Extensions.Logging.Abstractions** (v10.0.2)
 
 ## Package Information
 
 - **Package Name**: SunamoStopwatch
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
+- **Version**: 26.2.7.2
+- **Target Frameworks**: net10.0, net9.0, net8.0
 - **Category**: Platform-Independent NuGet Package
-- **Source Files**: 9
+- **License**: MIT
 
 ## Related Packages
 
