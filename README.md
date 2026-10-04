@@ -1,5 +1,10 @@
 # SunamoStopwatch
 
+## Short description
+
+Knihovna pro měření času mezi operacemi, v instanční i statické podobě. Obsahuje Runner a testy.
+
+
 Measuring time between operations.
 
 ## Overview
